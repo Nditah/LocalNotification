@@ -12,11 +12,12 @@ import { AppRoutingModule } from './app-routing.module';
 // import {IonMarqueeModule} from 'ionic-marquee';
 import { BackgroundMode } from '@ionic-native/background-mode/ngx';
 import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
+import {NgMarqueeModule} from 'ng-marquee';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgMarqueeModule],
   providers: [
     StatusBar,
     SplashScreen,
